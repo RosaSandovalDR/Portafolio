@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="gallery-grid.css">
+    <link rel="stylesheet" href="estilos.css">
 
     <title>Rosa Sandoval</title>
 </head>
 <body>
     <header>
-        <div>
-            <h1><strong>MI PORTAFOLIOS</strong></h1>
+        <div class="container" id="header">
+            <h1 class="name"><strong>MI PORTAFOLIOS</strong></h1>
             <nav>
                 <ol>
                     <li>
@@ -26,40 +27,48 @@
             </nav>
         </div>
     </header>
-<section id="SobreMi">
-    <h1>Sobre mi</h1>
-    <p>Mi nombre es Rosa Sandoval, tengo veintiun años y estoy aprendiendo a 
-        desarrollar páginas web con HTML, CSS y JavaScript.
-        He realizado varios cursos y tengo muchísimas ganas de aprender.
-        Tengo planeado hacer varios cursos para poder ser desarrolladora Fronted
-        y de ser posible también tener más conocimiento sobre el Backend y otros 
-        idiomas de programción como Python o Ruby on Rails.
-    </p>
-    <figure>
-        <img href="" alt="Imagen bien cool que voy a poner aquí">
-    </figure>
-</section>
-<section id="Proyectos">
-    <h1>Proyectos 2020</h1>
-    <article>
-    <h2>Pantalla de dibujo programada con JavaScript</h2>
-    <canvas id="area_de_dibujo" height="400" width="600"></canvas>
-    <input type="color" id="colorPicker">
-</article>
-<article>
-    <div>
-    <h2>Caja - Inventario (Macros de Excel)</h2>
-    <a href="">Visualizar DEMO</a>
+<section id="SobreMi" class="main">
+    <div class="container" id="main">
+        <div class="main-details">
+            <h2>Sobre mi</h2>
+            <p>Mi nombre es Rosa Sandoval, tengo veintiun años y estoy aprendiendo a 
+                desarrollar páginas web con HTML, CSS y JavaScript.
+                He realizado varios cursos y tengo muchísimas ganas de aprender.
+                Tengo planeado hacer varios cursos para poder ser desarrolladora Fronted
+                y de ser posible también tener más conocimiento sobre el Backend y otros 
+                idiomas de programción como Python o Ruby on Rails.
+            </p>
+        </div>
+        <figure class="main-image">
+            <img href="" alt="Imagen bien cool que voy a poner aquí">
+        </figure>
     </div>
-</article>
-<article>
-    <div class="container gallery-container">
-
-    <h2>Algunos de mis trabajos de diseño en photoshop</h2>
-    
-    <div class="tz-gallery">
-
-        <div class="row">
+    </section>
+    <section id="Proyectos">
+            
+        <div class="container" id="project">
+            <h1 class="project-title">Proyectos 2020</h1>
+            <article class="project-canvas">
+                <h2>Pantalla de dibujo programada con JavaScript</h2>
+                <div class="magic">
+                <canvas id="area_de_dibujo" height="400" width="600"></canvas>
+                <input type="color" id="colorPicker">
+            </div>
+            </article>
+            <article>
+            <div>
+            <h2>Caja - Inventario (Macros de Excel)</h2>
+            <a href="" class="caja-url">Visualizar DEMO</a>
+            </div>
+            </article>
+            <article>
+                <div class="container gallery-container">
+        
+        <h2>Algunos de mis trabajos de diseño en photoshop</h2>
+        
+        <div class="tz-gallery">
+            
+            <div class="row">
             <div class="col-sm-6 col-md-4">
                 <a class="lightbox">
                     <img src="Images/natural.jpg" alt="Logo de NaturalTarot">
@@ -76,11 +85,12 @@
                 </a>
             </div>
         </div>
-
+        
     </div>
-
-</div>
+    
+        </div>
 </article>
+</div>
 </section>
 <section id="InformacionDeContacto">
     <h1>Contáctame</h1>
@@ -91,7 +101,6 @@
         <input type="submit" value="Enviar">
     </form>
 </section>
-<section>Footer</section>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<section class="footer"></section>
 </body>
 </html>
