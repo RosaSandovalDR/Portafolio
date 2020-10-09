@@ -1,0 +1,114 @@
+body{
+margin:0;
+}
+
+#header{
+    background-color: tomato;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-box-shadow: 0px 4px 4px 0px gray;
+    -moz-box-shadow: 0px 4px 4px 0px gray;
+    box-shadow: 0px 4px 4px 0px tan;
+    position: relative;
+}
+
+h1{
+    color: white;
+    margin:0;
+    justify-self: flex-start;
+}
+
+h2{
+    color: coral;
+}
+
+ol{
+    list-style: none;
+    display: flex;
+}
+
+li{
+    display: inline-block;
+    margin: 0 10px 0 10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+
+}
+
+strong{
+    margin:0;
+}
+
+
+
+.main{
+    background-color: wheat;
+color: ;
+}
+
+.main-details{
+    width: 500px;
+}
+
+#main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+#Proyectos{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#project{
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+.project-title{
+    color: tomato;
+    text-transform: uppercase;
+    margin:50px;
+}
+.project-canvas{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.magic{
+    align-self: center;
+    display: flex;
+    align-content: center;
+}
+canvas{
+    color: red;
+border: 1px solid grey;
+border-radius: 5px;
+}
+
+#colorPicker{
+    height: 100px;
+    width: 100px;
+    border: 1px solid;
+    border-radius: 25px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.footer{
+    height: 100px;
+    background-color: tomato;
+}
