@@ -1,5 +1,14 @@
 body{
+    font-family: 'Asul';
 margin:0;
+}
+
+h1
+{
+    font-family: 'Secular One', sans-serif;
+}
+h2, h3, h4, h5, h6 {
+    font-family: 'Sansita Swashed';
 }
 
 #header{
@@ -71,7 +80,7 @@ color: ;
 }
 
 #project{
-    background-color: whitesmoke;
+    background-color: white;
     padding: 20px;
 }
 
@@ -79,24 +88,38 @@ color: ;
     color: tomato;
     text-transform: uppercase;
     margin:50px;
+    border-bottom: double;
 }
 .project-canvas{
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: rgb(255, 251, 214);
     padding: 20px;
     border-radius: 20px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .magic{
+    height: 400px;
+    width: 820px;
     align-self: center;
     display: flex;
+    justify-content: space-between;
     align-content: center;
 }
-canvas{
+#area_de_dibujo{
     color: red;
 border: 1px solid grey;
 border-radius: 5px;
+background-color: white;
+flex-shrink: 0;
+}
+
+label{
+    border: none;
+    background: none;
 }
 
 #colorPicker{
@@ -106,9 +129,25 @@ border-radius: 5px;
     border-radius: 25px;
     overflow: hidden;
     padding: 0;
+    display: block;
 }
 
 .footer{
     height: 100px;
     background-color: tomato;
+}
+
+.caja-url{
+    color: tomato;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.tools{
+    margin: 0;
+    height: 400px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }

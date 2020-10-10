@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Asul&family=Sansita+Swashed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="gallery-grid.css">
     <link rel="stylesheet" href="estilos.css">
 
@@ -52,7 +54,16 @@
                 <h2>Pantalla de dibujo programada con JavaScript</h2>
                 <div class="magic">
                 <canvas id="area_de_dibujo" height="400" width="600"></canvas>
-                <input type="color" id="colorPicker">
+                <div class="tools">
+                    <div>
+                        <p>¡Escoge un color!</p>
+                        <input type="color" id="colorPicker">
+                    </div>
+                    <div>
+                        <p>Tamaño del lapiz</p>
+                        <input type="number" id="lineSize" height="10" width="15" value="3">
+                    </div>
+                </div>
             </div>
             </article>
             <article>
@@ -102,5 +113,6 @@
     </form>
 </section>
 <section class="footer"></section>
+<script src="code.js"></script>
 </body>
 </html>
