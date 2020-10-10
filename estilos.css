@@ -22,6 +22,7 @@ h2, h3, h4, h5, h6 {
     -moz-box-shadow: 0px 4px 4px 0px gray;
     box-shadow: 0px 4px 4px 0px tan;
     position: relative;
+    padding: 0 20px;
 }
 
 h1{
@@ -58,7 +59,6 @@ strong{
 
 .main{
     background-color: wheat;
-color: ;
 }
 
 .main-details{
@@ -150,4 +150,93 @@ label{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    height: 200px;
+
+}
+
+.element img{
+    height: 200px;
+    width: auto;
+    object-fit: cover;
+    box-shadow: 4px 4px 4px 0 grey;
+}
+
+.element img:hover{
+    height: 220px;
+}
+
+.gallery-container{
+    background-color: rgb(255, 251, 214);
+    padding: 20px;
+    border-radius: 20px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.macros{
+    background-color: rgb(255, 251, 214);
+    padding: 20px;
+    border-radius: 20px;
+    width: 1000px;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.info{
+    height: auto;
+    background-color: wheat;
+    padding: 30px;
+
+}
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+.user-info{
+    width: 200px;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-shrink: 0;
+}
+input {
+    margin: 5px;
+    flex-shrink: 0;
+    font-family: 'Asul';
+}
+.text{
+    color:tomato;
+    border: 1px solid tomato;
+    border-radius: 5px;
+
+}
+.submit{
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    color:white;
+    background-color: tomato;
+}
+#mensaje{
+    width: 300px;
+    height: 100px;
+}
+
+textarea{
+    margin: 30px;
+    margin-top: 0;
 }

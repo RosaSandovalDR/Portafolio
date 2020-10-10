@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="images/r.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Asul&family=Sansita+Swashed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="gallery-grid.css">
     <link rel="stylesheet" href="estilos.css">
 
     <title>Rosa Sandoval</title>
@@ -67,49 +67,43 @@
             </div>
             </article>
             <article>
-            <div>
+            <div class="macros">
             <h2>Caja - Inventario (Macros de Excel)</h2>
             <a href="" class="caja-url">Visualizar DEMO</a>
             </div>
             </article>
             <article>
-                <div class="container gallery-container">
+                <div class="gallery-container">
         
         <h2>Algunos de mis trabajos de diseño en photoshop</h2>
         
-        <div class="tz-gallery">
+        <div class="gallery">
             
-            <div class="row">
-            <div class="col-sm-6 col-md-4">
-                <a class="lightbox">
-                    <img src="Images/natural.jpg" alt="Logo de NaturalTarot">
-                </a>
+            <div class="element">
+                    <img src="Images/natural.jpg" height="200" alt="Logo de NaturalTarot">
             </div>
-            <div class="col-sm-6 col-md-4">
-                <a class="lightbox">
-                    <img src="Images/iron.jpg" alt="Logo de IronShell">
-                </a>
+            <div class="element">
+                    <img src="Images/iron.jpg" height="200" alt="Logo de IronShell">
             </div>
-            <div class="col-sm-12 col-md-4">
-                <a class="lightbox">
-                    <img src="Images/iron-info.jpg" alt="Infografía">
-                </a>
+            <div class="element">
+                    <img src="Images/iron-info.jpg" width="200" alt="Infografía">
             </div>
-        </div>
         
-    </div>
+        </div>
     
         </div>
 </article>
 </div>
 </section>
-<section id="InformacionDeContacto">
-    <h1>Contáctame</h1>
-    <form for="/enviar correo auto">
-        <input type="text" placeholder="Nombre"> <br>
-        <input type="email" placeholder="example@email.com"> <br>
-        <input type="text" placeholder="¡Escribe aquí!" class="large-textbox"> <br>
-        <input type="submit" value="Enviar">
+<section class="info" id="InformacionDeContacto">
+    <h2>Contáctame</h2>
+    <form>
+        <div class="user-info">
+            <input id="name" class="text" type="text" placeholder="Nombre"> <br>
+            <input id="email" class="text" type="email" placeholder="example@email.com"> <br>
+            <input id="submit" class="submit" type="submit" value="Enviar">
+        </div>
+        <textarea id="mensaje" class="text" placeholder="¡Escribe aquí!"></textarea> <br>
     </form>
 </section>
 <section class="footer"></section>

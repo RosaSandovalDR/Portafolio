@@ -60,3 +60,17 @@ function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal, curSize)
   lienzo.stroke();
   lienzo.closePath();
 }
+
+var sub = document.getElementById("submit");
+sub.addEventListener("click", enviarMail)
+
+function enviarMail() {
+    var formail =  document.getElementById("email").value;
+    var formname = document.getElementById("name").value;
+    var link = "mailto:rosasandovaldr@gmail.com"
+             + "?cc=myCCaddress@example.com"
+             + "&subject=" + encodeURIComponent(formname)
+             + "&body=" + encodeURIComponent(document.getElementById('mensaje').value + "Enviado por:" + formail);
+    
+    window.location.href = link;
+}
